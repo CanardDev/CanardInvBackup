@@ -1,0 +1,14 @@
+name: CanardInvBackup
+version: 1.0.0
+main: fr.canarddev.invbackup.CanardInvBackup
+api-version: '1.21'
+author: CanardDev
+description: Inventory + ender chest backups with read-only preview and restore.
+commands:
+  invbackup:
+    description: CanardInvBackup command
+    aliases: [ib, invb]
+permissions:
+  invbackup.use:
+    description: Use /invbackup
+    default: op

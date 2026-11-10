@@ -1,0 +1,28 @@
+# ============================================================
+#  CanardInvBackup - by CanardDev
+#  Saves inventory (armor + off-hand included) and ender chest.
+# ============================================================
+
+# Messages language: en or fr (files messages_en.yml / messages_fr.yml)
+language: en
+
+# Backups kept per player (the oldest ones are deleted)
+max-backups: 5
+
+# When to save automatically
+save-on:
+  quit: true
+  death: true
+  # players still online when the server stops
+  shutdown: true
+
+# Extra daily backup of everyone online at a fixed time
+# (useful a few minutes before an automatic restart)
+scheduled:
+  enabled: false
+  time: "03:55"
+
+# Time zone used for the scheduled time and for the dates shown
+# Examples: Europe/Paris, Europe/London, America/New_York, UTC
+timezone: "Europe/Paris"
+date-format: "dd/MM/yyyy HH:mm:ss"
